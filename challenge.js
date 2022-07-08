@@ -1,12 +1,18 @@
 // Optionally: start with your code from LinkedList challenge.
 
 class Stack {
+  constructor() {
+    this.items = [];
+  }
   push(number) {
     // your code here
+    this.items.push(number)
   }
   
   pop() {
     // your code here
+    if (!this.items.length) return 'empty stack';
+    return this.items.pop()
   }
 }
 
